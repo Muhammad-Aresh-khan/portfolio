@@ -142,6 +142,21 @@ const projectsData = [
         tech: ["FastAPI", "Python", "Firestore", "Gemini", "Pydantic", "Pytest"],
         icon: Cpu,
         status: "Production Contribution"
+    },
+    {
+        id: 10,
+        title: "RaahAI",
+        role: "Backend & Agentic Architect",
+        category: ["agentic", "backend", "automation"],
+        desc: "Autonomous NGO Case Intelligence & Dispatch System developed for the Google Antigravity Hackathon (Challenge 1).",
+        bullets: [
+            "Architected a 5-agent sequential decision pipeline (Intake, Validation, Severity/Impact, Action Gen, Dispatch) orchestrated via Google Antigravity.",
+            "Built a FastAPI backend serving as an MCP Tool Server and API Gateway routing payloads securely to Google Sheets, Firestore, Maps, and SMS.",
+            "Enforced strict stateless schemas, trace loggers (TraceObject), and fail-safe validations to safely process multilingual help requests (Urdu, Roman Urdu, English)."
+        ],
+        tech: ["FastAPI", "Google Antigravity", "Python", "Firestore", "MCP Tools", "Docker"],
+        icon: Cpu,
+        status: "Production Contribution"
     }
 ];
 

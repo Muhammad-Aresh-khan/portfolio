@@ -61,6 +61,12 @@ PROJECT DETAILS:
 7. Code Assistant: LangChain-powered code generator built on Streamlit with contextual coding memory.
 8. PDF to Audio & Summary with AI Chatbot (R&D Lab Project): Privacy-first document intelligence using Chainlit, LangChain, and Ollama (gemma-long 128k context) to mitigate context window congestion. Saves history with SQLAlchemy for session resuming, and generates MP3 output.
 9. 51Skills AI Backend (Contribution): FastAPI learning microservice layer with adaptive MCQs and transcript-grounded quizzes, ELO-style skills scoring, sequenced roadmaps with catalog recommendations, and Firestore caches.
+10. RaahAI (Backend & Agentic Architect - Production Contribution) | FastAPI, Google Antigravity, Python, Firestore, Docker, MCP:
+    * Developed for the Google Antigravity Hackathon (Challenge 1).
+    * 5-Agent Pipeline: Autonomous NGO Case Intelligence & Dispatch System (Intake, Validation, Severity & Impact, Action Generation, and Dispatch Agents) using Google Antigravity.
+    * FastAPI Backend: Created the backend serving as an MCP (Model Context Protocol) tool server and API gateway.
+    * Storage & Integration: Integrates Google Sheets MCP case trackers, Firestore logs, Google Maps, Playwright, and GitHub MCP nodes.
+    * Schemas & Validation: Enforced strict stateless validation using shared schemas (CaseObject and TraceObject) processing Urdu, Roman Urdu (Hinglish), and English.
 `;
 
 export async function POST(request) {
