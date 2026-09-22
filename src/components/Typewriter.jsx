@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 
 export default function Typewriter() {
     const phrases = [
-        "Production-Grade RAG Pipelines",
-        "Multi-Agent LLM Systems",
-        "Scalable Backend REST APIs",
-        "Intelligent Workflow Automation"
+        "AI-Powered SaaS & Software Products",
+        "LLMs & Agentic AI Architectures",
+        "Scalable Backend Systems & APIs",
+        "Intelligent Workflow Automation & Portals"
     ];
 
     const [text, setText] = useState('');

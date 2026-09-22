@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { ShieldCheck, Database, GitPullRequest, Mic, Users, Terminal, FileText, Cpu } from 'lucide-react';
+import { ShieldCheck, Database, GitPullRequest, Mic, Users, Terminal, FileText, Cpu, Activity, Trophy, Layers, Target } from 'lucide-react';
 
 const InstagramIcon = ({ size = 20, className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -16,7 +16,7 @@ const projectsData = [
         id: 1,
         title: "Munafah AI",
         role: "Lead Backend & AI Engineer",
-        category: ["backend", "agentic"],
+        category: ["backend", "agentic", "saas"],
         desc: "A comprehensive B2B matchmaking engine and AI-driven lead enrichment platform for market intelligence.",
         bullets: [
             "Buyer Enrichment Pipeline: Automates personal contact info enrichment and market intelligence retrieval.",
@@ -31,7 +31,7 @@ const projectsData = [
         id: 2,
         title: "Logixa",
         role: "AI & Backend Developer",
-        category: ["backend", "agentic"],
+        category: ["backend", "agentic", "saas"],
         desc: "AI DB — A conversational AI platform that allows users to chat directly with any relational database (RDBMS) using natural language.",
         bullets: [
             "Built intelligent LangChain database agents and RAG routing mechanisms.",
@@ -130,18 +130,21 @@ const projectsData = [
     },
     {
         id: 9,
-        title: "51Skills AI Backend",
+        title: "51Skills AI Backend & Learning Platform",
         role: "Backend & AI Developer",
-        category: ["backend", "agentic"],
-        desc: "FastAPI-based microservice layer powering intelligent assessment engines and dynamic educational roadmaps.",
+        category: ["backend", "agentic", "saas"],
+        desc: "FastAPI-powered microservice layer delivering adaptive skill testing, transcript-grounded quizzes, and personalized roadmaps.",
         bullets: [
-            "Built an adaptive assessment quiz engine generating checkpoint quizzes grounded in transcripts.",
-            "Designed curriculum sequencing logic adjusting course pathways dynamically based on verified ELO-style scoring.",
-            "Developed Firestore caching layers and semantic domain mapping algorithms to optimize response latency."
+            "🏆 Won 3rd Position Nationwide out of 500+ teams at the Lok Sahita STEM Talent Search Hackathon.",
+            "Production Contribution: Engineered FastAPI microservice layer powering adaptive skill assessment and personalized roadmaps.",
+            "Built an adaptive assessment quiz engine generating checkpoint quizzes dynamically grounded in lesson transcripts.",
+            "Designed curriculum sequencing logic adjusting course pathways based on verified ELO-style skills scoring."
         ],
         tech: ["FastAPI", "Python", "Firestore", "Gemini", "Pydantic", "Pytest"],
-        icon: Cpu,
-        status: "Production Contribution"
+        icon: Trophy,
+        status: "Production Contribution",
+        awardBadge: "🏆 3rd Place Nationwide (500+ Teams)",
+        isAward: true
     },
     {
         id: 10,
@@ -157,6 +160,38 @@ const projectsData = [
         tech: ["FastAPI", "Google Antigravity", "Python", "Firestore", "MCP Tools", "Docker"],
         icon: Cpu,
         status: "Production Contribution"
+    },
+    {
+        id: 11,
+        title: "Clinic WebApp CMS & Patient Portal",
+        role: "Lead Backend Engineer (FastAPI) & Full-Stack Contributor",
+        category: ["backend", "saas"],
+        desc: "End-to-end Healthcare ERP & Clinic Management platform featuring role-based portals for Admin, Reception, Laboratory, and Pharmacy POS.",
+        bullets: [
+            "Architected complete backend with FastAPI: High-performance async REST APIs, PostgreSQL schemas, and JWT Role-Based Access Control (RBAC).",
+            "Multi-Role Modular Portals: Dedicated workspaces for Admin oversight, Reception desk with patient intake & receipt print, Laboratory diagnostic queue, and Pharmacy POS.",
+            "Pharmacy Point-of-Sale (POS): Complete inventory tracking, prescription dispensing, automated receipt generation, and real-time sales logging.",
+            "Patient Portal & Medical Records: Secure diagnostic report generation, billing history, and streamlined operational workflows with responsive UI touches."
+        ],
+        tech: ["FastAPI", "Python", "PostgreSQL", "SQLAlchemy", "JWT / RBAC", "POS & Receipt Print", "REST APIs"],
+        icon: Activity,
+        status: "Production WebApp / SaaS"
+    },
+    {
+        id: 12,
+        title: "Cardience",
+        role: "Lead Backend & AI Systems Engineer",
+        category: ["backend", "agentic", "saas"],
+        desc: "B2B business intelligence and matchmaking ecosystem. Spearheaded end-to-end backend feature development using Next.js combined with a high-performance FastAPI AI microservice layer.",
+        bullets: [
+            "End-to-End Backend Feature Engineering: Delivered complete backend features, data models, and scalable API pipelines across Next.js and PostgreSQL.",
+            "AI Microservice Architecture: Designed high-throughput FastAPI microservice layers communicating seamlessly with the Next.js backend for heavy AI tasks.",
+            "Lead Matchmaking Engine: Built semantic and criteria-driven matchmaking algorithms linking high-fit enterprise buyers and vendors.",
+            "Business Opportunity & Profile Analyzer: Engineered LLM-powered intelligence analyzers evaluating market feasibility and automating corporate profile enrichment."
+        ],
+        tech: ["FastAPI", "Next.js", "Python", "LLMs", "Microservices", "PostgreSQL", "REST APIs"],
+        icon: Target,
+        status: "Company Product"
     }
 ];
 
@@ -184,16 +219,22 @@ export default function ProjectsGrid() {
                         All Projects
                     </button>
                     <button 
-                        className={`filter-btn ${filter === 'agentic' ? 'active' : ''}`}
-                        onClick={() => setFilter('agentic')}
+                        className={`filter-btn ${filter === 'saas' ? 'active' : ''}`}
+                        onClick={() => setFilter('saas')}
                     >
-                        Agentic AI & LLMs
+                        SaaS & Web Platforms
                     </button>
                     <button 
                         className={`filter-btn ${filter === 'backend' ? 'active' : ''}`}
                         onClick={() => setFilter('backend')}
                     >
                         Backend & APIs
+                    </button>
+                    <button 
+                        className={`filter-btn ${filter === 'agentic' ? 'active' : ''}`}
+                        onClick={() => setFilter('agentic')}
+                    >
+                        Agentic AI & LLMs
                     </button>
                     <button 
                         className={`filter-btn ${filter === 'automation' ? 'active' : ''}`}
@@ -209,7 +250,7 @@ export default function ProjectsGrid() {
                         return (
                             <div 
                                 key={proj.id} 
-                                className="project-card glass-card"
+                                className={`project-card glass-card ${proj.isAward ? 'card-award-glow' : ''}`}
                                 style={{
                                     opacity: 1,
                                     transition: 'opacity 0.4s ease'
@@ -221,6 +262,11 @@ export default function ProjectsGrid() {
                                         <Icon className="proj-type-icon" size={20} />
                                     </div>
                                 </div>
+                                {proj.awardBadge && (
+                                    <div className="project-award-pill">
+                                        <span>{proj.awardBadge}</span>
+                                    </div>
+                                )}
                                 <h3 className="project-title">{proj.title}</h3>
                                 <p className="project-role">{proj.role}</p>
                                 <p className="project-desc">{proj.desc}</p>

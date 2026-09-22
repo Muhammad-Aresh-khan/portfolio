@@ -13,61 +13,68 @@ BEHAVIORAL CONSTRAINTS:
 RESUME KNOWLEDGE BASE:
 
 - Name: Muhammad Aresh Khan
-- Role: AI Engineer & Backend Developer
-- Location: Karachi, Pakistan (Onsite)
+- Role: AI Engineer @ Wenawa | Building AI-Powered SaaS & Software Products | LLMs & Agentic AI | Backend Engineering | BSCS ’27 @ DUET
+- Location: Karachi, Pakistan (Onsite / Open to Remote Globally)
 - Email: muhammadareshk@gmail.com | Phone: +92 311 1641305
 - LinkedIn: linkedin.com/in/Muhammad-Aresh-khan | GitHub: github.com/Muhammad-Aresh-khan
-- Profile Summary: A results-driven AI Engineer and Backend Developer specializing in production-grade agentic systems (CrewAI, LangChain, LiteLLM), scalable FastAPI microservices, and robust n8n automation pipelines deployed on GCP Linux servers via Docker and PM2. Holds a solid BS Computer Science background (CGPA 3.27, Dawood University). Automated integrations cut manual effort by 30%+ and accelerated feature delivery speed by ~20%.
+- Profile Summary: An AI Engineer and Backend Architect focused on building intelligent software products, SaaS applications, web platforms, automation systems, and backend solutions that solve real-world problems. Works at the intersection of AI, Software Engineering, and Product Development — from designing APIs and backend architecture (FastAPI, Django, PostgreSQL) to integrating AI capabilities (LangChain, LangGraph, LLMs, Agentic AI, RAG), automating workflows (n8n), and deploying scalable platforms on GCP Linux servers with Docker and PM2. Automated integrations cut manual effort by 30%+ and accelerated delivery speed by ~20%. Holds an ongoing BS in Computer Science (CGPA 3.27, 2023–2027) at Dawood University.
+
+HONORS & AWARDS:
+- 🏆 3rd Position Nationwide (out of 500+ teams) — Lok Sahita STEM Talent Search Hackathon (awarded for 51Skills AI Backend & Learning Platform).
 
 PROFESSIONAL EXPERIENCE:
-- Wenawa (AI Engineer / Software Engineer) [Aug 2025 – Present]:
-  * Architected and delivered secure, production-grade REST APIs using FastAPI, integrating advanced LLM agents and semantic RAG workflows linked to n8n data automation pipelines, cutting manual workflows by 30%+.
-  * Led the development and delivery of key client-facing AI platforms, translating complex business objectives into high-quality technical specifications.
-  * Deployed and containerized microservices on Google Cloud Platform (GCP) Linux servers using Docker, PM2, and custom script runtimes, ensuring 99.9% uptime.
-  * Championed clean software engineering practices, writing clean, modular Python codebase and reusable modules, accelerating feature delivery speed by ~20%.
+- Wenawa (AI Engineer - SaaS & Backend Engineering) [Aug 2025 – Present]:
+  * Architected and delivered secure, production-grade REST APIs and SaaS backend infrastructure using FastAPI & PostgreSQL, integrating advanced LLM agents and semantic RAG workflows linked to n8n automation pipelines, cutting manual effort by 30%+.
+  * Built modular business workflows, role-based dashboards, and client-facing AI platforms, converting complex functional specifications into scalable software products.
+  * Deployed and containerized microservices on Google Cloud Platform (GCP) Linux servers using Docker and PM2, ensuring 99.9% uptime.
+  * Championed clean software engineering practices, writing clean, modular Python codebases that accelerated feature delivery speed by ~20%.
 
 EDUCATION & STUDY:
-- BS in Computer Science (CGPA: 3.27, Jul 2023 – Jun 2027) at Dawood University of Engineering and Technology, Karachi.
+- BS in Computer Science (CGPA: 3.27, Jul 2023 – Jun 2027) at Dawood University of Engineering and Technology (DUET), Karachi.
 
 CERTIFICATIONS:
 - Python for Data Science, AI & Development (IBM / Coursera)
 - n8n Chatbot Lab Masterclass (Datacrumbs)
 
 CORE STACK & EXPERTISE:
-- Languages: Python, SQL
-- Frameworks: LangChain, CrewAI, FastAPI, Chainlit, Streamlit, LiteLLM, Ollama, Hugging Face Transformers
-- AI & Infrastructure: RAG Pipelines, Kokoro TTS, Whisper STT, LiveKit WebRTC, Docker, PM2, GCP Linux servers, PostgreSQL
-- Concepts: Agentic AI, REST API Design, API Security, Auth & Subscriptions, Workflow Automation, DBMS
+- Languages & Backend: Python, FastAPI, Django, SQL, PostgreSQL, SQLAlchemy, REST API Design, Docker, Linux, GCP
+- AI & LLM Systems: LLMs & Modern Platforms, Agentic AI, LangGraph, LangChain, CrewAI, RAG Pipelines, Vector DBs, Whisper STT, Kokoro TTS, LiveKit WebRTC
+- SaaS & Business Systems: Management Platforms, Role-Based Dashboards (RBAC), Patient & Business Portals, POS & Receipt Printing, Workflow Systems, UI/UX Design
+- Automation & Tooling: n8n Automation, Git & GitHub, PM2 Process Manager, Microservices, Data Science & ML
 
 PROJECT DETAILS:
-1. Munafah AI (Lead Backend & AI Engineer - Enterprise Client Project) | Python, FastAPI, LangChain, RAG, n8n, PostgreSQL, GCP:
+1. Clinic WebApp CMS & Patient Portal (Lead Backend Engineer & Full-Stack Contributor - Production WebApp / SaaS) | FastAPI, Python, PostgreSQL, SQLAlchemy, JWT/RBAC, POS & Receipt Print:
+   * End-to-end Healthcare ERP & Clinic Management platform featuring role-based portals for Admin, Reception, Laboratory, and Pharmacy POS.
+   * Complete FastAPI Backend: High-performance async REST APIs, relational PostgreSQL schemas, and JWT Role-Based Access Control (RBAC).
+   * Multi-Role Portals: Admin analytics, Reception desk with patient intake & thermal receipt printing, Laboratory diagnostic queue & report generation.
+   * Pharmacy POS: Real-time inventory tracking, medicine dispensing, automated receipt generation, and transaction logging.
+2. Munafah AI (Lead Backend & AI Engineer - Enterprise Client Project) | Python, FastAPI, LangChain, RAG, n8n, PostgreSQL, GCP:
    * Buyer Enrichment Pipeline: Automatically runs personal contact info enrichment and market intelligence retrieval.
-   * Seller Enrichment: Automates market intelligence gatherers and business profile metrics.
-   * Chatbot Export Manager: Developed an interactive chatbot allowing sellers to export leads, matches, and analytics.
-   * Smart Outreach: Designed custom background n8n automation linking buyers and sellers based on profile fits.
-   * Real-Time Niche News Feed: Ingests and curates real-time news insights calibrated to the seller's specific business niche.
-   * Infrastructure: Architected full FastAPI server schemas with secure JWT auth, paywalls, and PostgreSQL databases.
-2. Logixa — AI DB (AI & Backend Developer - Company Product) | Python, FastAPI, Chainlit, LangChain, RAG, PostgreSQL, GCP:
-   * Built a conversational AI platform connecting to any RDBMS using LangChain agents and RAG pipelines.
-   * Developed an interactive UI using Chainlit with dynamic chart generation, report generation, chat resuming, and automated database connections.
-3. n8n Workflow Automation Suite (Workflow Architect - Enterprise Client Work) | n8n, LangChain, RAG, Gmail API, Sheets API:
-   * Smart Outreach for Munafah AI: Built a flow where a seller sends a message to the app, triggering a background n8n workflow that sends an email to the buyer, polls for their response, and builds chat history.
-   * HR Automation: Architected automated email outreach, candidate screening, and onboarding workflows, significantly reducing manual workload.
-   * Shopify Product Recommendation: Developed an agentic RAG system for Shopify product recommendations as client work.
-   * Lofty CRM: Built an n8n integration workflow automating CRM lead synchronization for real estate operations.
-4. Real-Time AI Interview Module (HRMS) (Lead AI Developer - Company Product) | Python, Kokoro TTS, Whisper, LiveKit, LLMs:
-   * Built a real-time AI interview system combining speech recognition (Whisper), low-latency candidate evaluation (LLMs), and high-quality voice synthesis (Kokoro TTS) connected via LiveKit WebRTC channels.
-5. Virtual Instagram Manager: Automated social media execution using LangChain, Hugging Face Transformers, and Playwright for topic research, descriptions, graphics, and scheduling.
-6. Startup Evaluator: CrewAI multi-agent engine analyzing pitch decks, competitor risk research, and financial reports using LiteLLM costing wrappers.
-7. Code Assistant: LangChain-powered code generator built on Streamlit with contextual coding memory.
-8. PDF to Audio & Summary with AI Chatbot (R&D Lab Project): Privacy-first document intelligence using Chainlit, LangChain, and Ollama (gemma-long 128k context) to mitigate context window congestion. Saves history with SQLAlchemy for session resuming, and generates MP3 output.
-9. 51Skills AI Backend (Contribution): FastAPI learning microservice layer with adaptive MCQs and transcript-grounded quizzes, ELO-style skills scoring, sequenced roadmaps with catalog recommendations, and Firestore caches.
-10. RaahAI (Backend & Agentic Architect - Production Contribution) | FastAPI, Google Antigravity, Python, Firestore, Docker, MCP:
-    * Developed for the Google Antigravity Hackathon (Challenge 1).
-    * 5-Agent Pipeline: Autonomous NGO Case Intelligence & Dispatch System (Intake, Validation, Severity & Impact, Action Generation, and Dispatch Agents) using Google Antigravity.
-    * FastAPI Backend: Created the backend serving as an MCP (Model Context Protocol) tool server and API gateway.
-    * Storage & Integration: Integrates Google Sheets MCP case trackers, Firestore logs, Google Maps, Playwright, and GitHub MCP nodes.
-    * Schemas & Validation: Enforced strict stateless validation using shared schemas (CaseObject and TraceObject) processing Urdu, Roman Urdu (Hinglish), and English.
+   * Seller Enrichment & Chatbot Export Manager: Gathers business metrics and enables lead exporting via chat UI.
+   * Smart Outreach & News Feed: Integrates n8n communication workflows and niche-specific real-time news feeds.
+3. Logixa — AI DB (AI & Backend Developer - Company Product) | Python, FastAPI, Chainlit, LangChain, RAG, PostgreSQL, GCP:
+   * Built a conversational AI platform connecting to any RDBMS using LangChain agents and RAG pipelines with dynamic chart generation and PDF reports.
+4. 51Skills AI Backend & Learning Platform (Backend & AI Developer - Production Contribution) | FastAPI, Python, Firestore, Gemini, Pydantic, Pytest:
+   * 🏆 Won 3rd Position Nationwide out of 500+ teams at the Lok Sahita STEM Talent Search Hackathon for this production learning platform.
+   * Engineered FastAPI microservice layer powering adaptive skill assessment and personalized roadmaps.
+   * Built an adaptive assessment quiz engine generating checkpoint quizzes grounded in lesson transcripts.
+   * Designed curriculum sequencing logic adjusting course pathways based on verified ELO-style skills scoring and Firestore caches.
+5. n8n Workflow Automation Suite (Workflow Architect - Enterprise Client Work) | n8n, LangChain, RAG, Gmail API, Sheets API:
+   * Automated email outreach, HR candidate screening/onboarding, real estate lead qualification via Lofty CRM, and Shopify product recommendation RAG.
+6. Real-Time AI Interview Module (HRMS) (Lead AI Developer - Company Product) | Python, Kokoro TTS, Whisper, LiveKit, LLMs:
+   * Speech-to-speech AI candidate screening combining Whisper STT, Kokoro TTS, and LiveKit WebRTC.
+7. RaahAI (Backend & Agentic Architect - Production Contribution) | FastAPI, Google Antigravity, Python, Firestore, Docker, MCP:
+   * Autonomous 5-agent NGO Case Intelligence & Dispatch System developed for Google Antigravity Hackathon.
+8. Virtual Instagram Manager: Automated social media execution using LangChain, Hugging Face Transformers, and Playwright.
+9. Startup Evaluator: CrewAI multi-agent engine analyzing pitch decks, competitor risks, and financial valuations via LiteLLM.
+10. Code Assistant: LangChain-powered code generator built on Streamlit with contextual coding memory.
+11. Cardience (Lead Backend & AI Systems Engineer - Company Product) | FastAPI, Next.js, Python, LLMs, Microservices, PostgreSQL, REST APIs:
+    * Spearheaded end-to-end backend feature development across the platform using Next.js combined with a high-performance FastAPI AI microservice layer and PostgreSQL.
+    * Lead Matchmaking Engine: Built semantic and algorithmic lead matchmaking pipelines connecting high-fit enterprise buyers and vendors.
+    * Business Opportunity Analyzer: Developed intelligent LLM evaluation workflows analyzing commercial opportunities, business viability, and trade metrics.
+    * Company Profile Analyzer: Engineered automated pipelines for corporate profile ingestion, strategic classification, and business intelligence enrichment.
+    * Company Profile Analyzer: Engineered automated pipelines for corporate profile ingestion, strategic classification, and business intelligence enrichment.
+12. PDF to Audio & Summary with AI Chatbot: Local, privacy-first document intelligence using Chainlit, LangChain, and Ollama (gemma-long 128k context) with MP3 output.
 `;
 
 export async function POST(request) {
@@ -91,30 +98,51 @@ export async function POST(request) {
       }))
     ];
 
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',
-        messages: apiMessages,
-        temperature: 0.6,
-        max_tokens: 300
-      })
-    });
+    const candidateModels = [
+      'qwen/qwen3.8-27b',
+      'openai/gpt-oss-120b',
+      'openai/gpt-oss-20b'
+    ];
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
+    let data = null;
+    let lastError = null;
+
+    for (const model of candidateModels) {
+      try {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            model: model,
+            messages: apiMessages,
+            temperature: 0.6,
+            max_tokens: 300
+          })
+        });
+
+        if (response.ok) {
+          data = await response.json();
+          break;
+        } else {
+          const errorData = await response.json().catch(() => ({}));
+          lastError = errorData.error?.message || `Model ${model} request failed with status ${response.status}`;
+        }
+      } catch (err) {
+        lastError = err.message;
+      }
+    }
+
+    if (!data) {
       return NextResponse.json(
-        { error: errorData.error?.message || 'Error communicating with Groq API' },
-        { status: response.status }
+        { error: lastError || 'Error communicating with Groq API' },
+        { status: 502 }
       );
     }
 
-    const data = await response.json();
-    const reply = data.choices[0]?.message?.content || 'Sorry, I was unable to compile a response.';
+    const reply = data.choices?.[0]?.message?.content || 'Sorry, I was unable to compile a response.';
 
     return NextResponse.json({ reply });
 

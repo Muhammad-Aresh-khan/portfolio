@@ -17,7 +17,10 @@ import {
   GraduationCap, 
   Briefcase, 
   Calendar, 
-  MapPin 
+  MapPin,
+  Trophy,
+  Layers,
+  Server
 } from 'lucide-react';
 
 const GithubIcon = ({ size = 20, className }) => (
@@ -51,7 +54,7 @@ export default function Home() {
             <div className="hero-content">
               <div className="badge-container">
                 <span className="hero-badge">
-                  <span className="pulse-dot"></span> Available for Opportunities
+                  <span className="pulse-dot"></span> AI Engineer @ Wenawa • BSCS ’27 @ DUET
                 </span>
               </div>
               <h1 className="hero-title">
@@ -61,7 +64,7 @@ export default function Home() {
                 I build <Typewriter />
               </h2>
               <p className="hero-description">
-                AI Engineer specializing in production-grade <strong>RAG pipelines</strong>, <strong>agentic AI systems</strong>, and scalable <strong>backend APIs</strong>. Proven track record of cutting manual workloads by <strong>30%+</strong> and improving feature delivery speed by <strong>~20%</strong>.
+                AI Engineer focused on building intelligent software products, SaaS applications, web platforms, automation systems, and backend solutions that solve real-world problems. Turning ideas into functional products — from API & backend architecture to AI integration, workflow automation, and practical web apps.
               </p>
               <div className="hero-ctas">
                 <a href="#projects" className="btn btn-primary">
@@ -108,14 +111,14 @@ export default function Home() {
                     <span className="stat-label">Faster Delivery Speed</span>
                   </div>
                 </div>
-                {/* Stat Card 3 */}
-                <div className="stat-card glass-card">
-                  <div className="stat-icon-wrapper green">
-                    <Cpu size={24} />
+                {/* Stat Card 3 - Hackathon Award */}
+                <div className="stat-card glass-card stat-card-award">
+                  <div className="stat-icon-wrapper gold">
+                    <Trophy size={24} />
                   </div>
                   <div className="stat-info">
-                    <span className="stat-value">7+</span>
-                    <span className="stat-label">AI & Backend Projects</span>
+                    <span className="stat-value">3rd / 500+</span>
+                    <span className="stat-label">STEM Hackathon Winner</span>
                   </div>
                 </div>
               </div>
@@ -134,20 +137,33 @@ export default function Home() {
             
             <div className="about-grid">
               <div className="about-bio glass-card">
-                <h3>Passionate about Agentic Workflows & Scalable Architecture</h3>
+                <h3>Bridging AI, Robust Backend Systems & Product Development</h3>
                 <p>
-                  I am a results-driven AI Engineer and Backend Developer specializing in architecting production-grade agentic systems, scalable microservices, and robust data automation pipelines.
+                  I’m an <strong>AI Engineer @ Wenawa</strong> focused on building intelligent software products, SaaS applications, web platforms, automation systems, and backend solutions that solve real-world problems.
                 </p>
                 <p>
-                  Currently, as an <strong>AI Engineer at Wenawa</strong>, I design and deploy high-performance RAG workflows, automate operational pipelines via n8n, and orchestrate secure FastAPI architectures on GCP Linux servers using Docker and PM2. These automated integrations have successfully eliminated operational bottlenecks, reducing manual effort by <strong>30%+</strong> and accelerating feature delivery speed by <strong>~20%</strong>.
+                  My work sits at the intersection of <strong>Artificial Intelligence, Software Engineering, and Product Development</strong>. I enjoy turning ideas into functional products — from designing APIs and backend architecture to integrating AI capabilities, automating workflows, and building practical web applications.
                 </p>
                 <p>
-                  With a solid CS foundation (BS Computer Science, CGPA 3.27, Dawood University), my expertise lies in multi-agent orchestration (CrewAI), LLM frameworks (LangChain, LiteLLM), and secure database design (SQLAlchemy, PostgreSQL). I specialize in translating complex business requirements into modular, high-quality Python codebases.
+                  My core expertise includes <strong>Python, LLMs, Agentic AI, RAG, AI automation, backend development, REST APIs, and database-driven applications</strong>, with hands-on experience using technologies such as <strong>LangChain, LangGraph, n8n, FastAPI, Django, PostgreSQL, Docker</strong>, and modern LLM platforms.
+                </p>
+                <p>
+                  Beyond AI, I build complete software systems and business applications, including management platforms, role-based dashboards, portals, workflow systems, and SaaS solutions designed around real business processes.
+                </p>
+                <p>
+                  I’m continuously exploring emerging technologies and turning ideas into practical, scalable, and user-focused products — combining technical depth in Machine Learning, Data Science, and UI/UX with solid engineering discipline.
                 </p>
                 
                 <div className="certifications-container">
-                  <h4>Certifications</h4>
+                  <h4>Honors & Certifications</h4>
                   <ul className="cert-list">
+                    <li className="cert-item-award">
+                      <Trophy className="cert-icon award-icon" size={20} />
+                      <div>
+                        <strong>3rd Position Nationwide (out of 500+ Teams)</strong>
+                        <span className="cert-meta">Lok Sahita STEM Talent Search Hackathon (51Skills AI Project)</span>
+                      </div>
+                    </li>
                     <li>
                       <Award className="cert-icon" size={20} />
                       <div>
@@ -222,75 +238,73 @@ export default function Home() {
             </div>
 
             <div className="skills-grid">
-              {/* Languages & Tools */}
+              {/* Backend & Cloud Architecture */}
               <div className="skill-category-card glass-card">
                 <div className="skill-category-header">
-                  <Cpu size={20} style={{ color: 'var(--accent-cyan)' }} />
-                  <h3>Languages & Tools</h3>
+                  <Server size={20} style={{ color: 'var(--accent-cyan)' }} />
+                  <h3>Backend & Cloud Architecture</h3>
                 </div>
                 <div className="skill-tags">
+                  <span className="skill-tag-item">FastAPI</span>
+                  <span className="skill-tag-item">Django</span>
                   <span className="skill-tag-item">Python</span>
-                  <span className="skill-tag-item">SQL</span>
-                  <span className="skill-tag-item">Git</span>
-                  <span className="skill-tag-item">GitHub</span>
-                  <span className="skill-tag-item">GCP</span>
-                  <span className="skill-tag-item">Linux</span>
-                  <span className="skill-tag-item">n8n</span>
-                  <span className="skill-tag-item">Figma</span>
+                  <span className="skill-tag-item">PostgreSQL</span>
+                  <span className="skill-tag-item">SQL & SQLAlchemy</span>
+                  <span className="skill-tag-item">REST API Design</span>
+                  <span className="skill-tag-item">Docker</span>
+                  <span className="skill-tag-item">GCP Linux Servers</span>
                 </div>
               </div>
 
-              {/* Frameworks */}
+              {/* AI & Agentic Systems */}
               <div className="skill-category-card glass-card">
                 <div className="skill-category-header">
-                  <Cpu size={20} style={{ color: 'var(--accent-cyan)' }} />
-                  <h3>Frameworks</h3>
+                  <Cpu size={20} style={{ color: 'var(--accent-purple)' }} />
+                  <h3>AI & Agentic Systems</h3>
                 </div>
                 <div className="skill-tags">
+                  <span className="skill-tag-item">LLMs & Prompt Eng</span>
+                  <span className="skill-tag-item">Agentic AI</span>
+                  <span className="skill-tag-item">LangGraph</span>
                   <span className="skill-tag-item">LangChain</span>
                   <span className="skill-tag-item">CrewAI</span>
-                  <span className="skill-tag-item">FastAPI</span>
-                  <span className="skill-tag-item">Chainlit</span>
-                  <span className="skill-tag-item">Streamlit</span>
-                  <span className="skill-tag-item">Hugging Face</span>
-                  <span className="skill-tag-item">LiteLLM</span>
-                  <span className="skill-tag-item">Ollama</span>
-                </div>
-              </div>
-
-              {/* AI & Infrastructure */}
-              <div className="skill-category-card glass-card">
-                <div className="skill-category-header">
-                  <Cpu size={20} style={{ color: 'var(--accent-cyan)' }} />
-                  <h3>AI & Infra</h3>
-                </div>
-                <div className="skill-tags">
                   <span className="skill-tag-item">RAG Pipelines</span>
-                  <span className="skill-tag-item">Kokoro TTS</span>
-                  <span className="skill-tag-item">Whisper</span>
-                  <span className="skill-tag-item">LiveKit</span>
-                  <span className="skill-tag-item">Docker</span>
-                  <span className="skill-tag-item">PM2</span>
-                  <span className="skill-tag-item">PostgreSQL</span>
-                  <span className="skill-tag-item">REST APIs</span>
+                  <span className="skill-tag-item">Vector Databases</span>
+                  <span className="skill-tag-item">Whisper & LiveKit</span>
                 </div>
               </div>
 
-              {/* Concepts */}
+              {/* Product & Solution Engineering */}
               <div className="skill-category-card glass-card">
                 <div className="skill-category-header">
-                  <Cpu size={20} style={{ color: 'var(--accent-cyan)' }} />
-                  <h3>Core Concepts</h3>
+                  <Layers size={20} style={{ color: 'var(--accent-green)' }} />
+                  <h3>Product & Solution Engineering</h3>
                 </div>
                 <div className="skill-tags">
-                  <span className="skill-tag-item">Agentic AI</span>
-                  <span className="skill-tag-item">REST API Design</span>
-                  <span className="skill-tag-item">Auth & Security</span>
-                  <span className="skill-tag-item">Workflow Automation</span>
-                  <span className="skill-tag-item">Prompt Engineering</span>
-                  <span className="skill-tag-item">Vector Databases</span>
-                  <span className="skill-tag-item">Multi-Agent Systems</span>
-                  <span className="skill-tag-item">DBMS</span>
+                  <span className="skill-tag-item">Product Development</span>
+                  <span className="skill-tag-item">Solution Architecture</span>
+                  <span className="skill-tag-item">Multi-Tenant SaaS</span>
+                  <span className="skill-tag-item">Role-Based Access (RBAC)</span>
+                  <span className="skill-tag-item">B2B Web Platforms</span>
+                  <span className="skill-tag-item">Business Workflows</span>
+                  <span className="skill-tag-item">API Integrations</span>
+                  <span className="skill-tag-item">UI/UX & User Flows</span>
+                </div>
+              </div>
+
+              {/* Automation & Tools */}
+              <div className="skill-category-card glass-card">
+                <div className="skill-category-header">
+                  <Zap size={20} style={{ color: 'var(--accent-pink)' }} />
+                  <h3>Automation & Tooling</h3>
+                </div>
+                <div className="skill-tags">
+                  <span className="skill-tag-item">n8n Automation</span>
+                  <span className="skill-tag-item">Git & GitHub</span>
+                  <span className="skill-tag-item">PM2 Process Manager</span>
+                  <span className="skill-tag-item">Data Science & ML</span>
+                  <span className="skill-tag-item">Figma</span>
+                  <span className="skill-tag-item">Microservices</span>
                 </div>
               </div>
             </div>
@@ -316,7 +330,7 @@ export default function Home() {
                 <div className="timeline-content glass-card">
                   <div className="timeline-header">
                     <div className="timeline-title-group">
-                      <h3 className="role-title">AI Engineer (Software Engineer)</h3>
+                      <h3 className="role-title">AI Engineer (SaaS & Backend Engineering)</h3>
                       <h4 className="company-name">Wenawa</h4>
                     </div>
                     <div className="timeline-meta">
@@ -332,19 +346,19 @@ export default function Home() {
                     <ul className="experience-bullets">
                       <li>
                         <span className="bullet-point-arrow"></span>
-                        <span>Architected and delivered secure, production-grade REST APIs using <strong>FastAPI</strong>, integrating advanced LLM agents and semantic RAG workflows linked to <strong>n8n data automation pipelines</strong>, reducing manual workflows by <strong>30%+</strong>.</span>
+                        <span>Architected and delivered secure, production-grade REST APIs and SaaS backend infrastructure using <strong>FastAPI</strong> & <strong>PostgreSQL</strong>, integrating advanced LLM agents and semantic RAG workflows linked to <strong>n8n automation pipelines</strong>, reducing manual effort by <strong>30%+</strong>.</span>
                       </li>
                       <li>
                         <span className="bullet-point-arrow"></span>
-                        <span>Led the development and delivery of key client-facing AI platforms, translating complex business objectives into high-quality technical specifications.</span>
+                        <span>Built modular business workflows, role-based dashboards, and client-facing AI platforms, converting complex functional specifications into scalable software products.</span>
                       </li>
                       <li>
                         <span className="bullet-point-arrow"></span>
-                        <span>Optimized deployment pipelines by hosting and containerizing microservices on <strong>Google Cloud Platform (GCP) Linux servers</strong> using <strong>Docker</strong> and <strong>PM2</strong> to ensure scalability and uptime.</span>
+                        <span>Optimized deployment pipelines by containerizing and hosting microservices on <strong>Google Cloud Platform (GCP) Linux servers</strong> using <strong>Docker</strong> and <strong>PM2</strong> to ensure 99.9% uptime.</span>
                       </li>
                       <li>
                         <span className="bullet-point-arrow"></span>
-                        <span>Championed clean software engineering practices, writing clean, modular Python codebase and reusable modules, accelerating feature delivery speed by <strong>~20%</strong>.</span>
+                        <span>Championed clean software engineering practices, writing modular Python codebases and reusable architecture that accelerated feature delivery speed by <strong>~20%</strong>.</span>
                       </li>
                     </ul>
                   </div>

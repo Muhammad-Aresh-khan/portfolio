@@ -4,17 +4,20 @@ import { useState, useRef, useEffect } from 'react';
 import { Wifi, Send } from 'lucide-react';
 
 const agentAnswers = {
-    identity: "Aresh is an AI Engineer & Backend Developer based in Karachi, Pakistan. He has professional experience building agentic workflows, scalable API structures, and custom LLM integrations. He currently works as an AI Engineer at Wenawa and is pursuing a BS in Computer Science.",
-    stack: "Languages: Python, SQL. \nFrameworks: LangChain, CrewAI, FastAPI, Chainlit, Streamlit, Hugging Face, LiteLLM, Ollama. \nInfrastructure & AI Tools: Docker, PM2, n8n, GCP Linux Servers, PostgreSQL, Kokoro TTS, Whisper Speech-to-Text, and LiveKit WebRTC.",
-    munafah: "Munafah AI is a B2B matchmaking and lead enrichment engine where Aresh served as Lead Backend & AI Engineer. He designed the backend API architecture (FastAPI), integrated paywalls, secured routes, and automated data synchronization loops using n8n, running in Docker environments on GCP.",
+    identity: "Muhammad Aresh Khan is an AI Engineer @ Wenawa focused on building AI-powered SaaS & software products, LLMs & Agentic AI, and scalable backend systems. He is currently pursuing BSCS ('27) at DUET Karachi with a CGPA of 3.27.",
+    stack: "Languages & Backend: FastAPI, Django, Python, PostgreSQL, SQLAlchemy, REST APIs, Docker, GCP Linux Servers.\nAI & Agentic AI: LangGraph, LangChain, CrewAI, RAG pipelines, Vector DBs, Whisper STT, Kokoro TTS, LiveKit.\nSaaS & Business Systems: Multi-Role Portals (RBAC), POS & Thermal Receipt Printing, Management Dashboards, n8n automation pipelines.",
+    clinic: "The Clinic WebApp CMS & Patient Portal is an end-to-end Healthcare ERP built with FastAPI. It features dedicated role-based portals for Admin, Reception (with patient queueing & receipt printing), Laboratory diagnostic tracking, and Pharmacy POS with medicine inventory management.",
+    cardience: "Cardience is a company product where Aresh spearheaded end-to-end backend feature development across Next.js and PostgreSQL, coupled with a high-performance FastAPI AI microservice layer powering the Lead Matchmaking Engine, Business Opportunity Analyzer, and Company Profile Analyzer.",
+    awards: "Aresh made a key production contribution to the 51Skills AI platform, engineering its FastAPI assessment & roadmap microservices, which won 3rd Position Nationwide out of 500+ competing teams at the Lok Sahita STEM Talent Search Hackathon!",
+    munafah: "Munafah AI is an enterprise client project where Aresh served as Lead Backend & AI Engineer, designing the FastAPI backend architecture, integrating paywalls, secure auth, and automated data synchronization loops via n8n.",
     automation: "Yes! Aresh designed an n8n Workflow Automation Suite. He built multi-channel HR screening/onboarding, automated email outreaches, real estate lead-qualification pipelines, and integrated agentic RAG product finders. Using n8n, he cut manual efforts by over 30%.",
-    availability: "Yes! Aresh is available for AI Engineer, Backend Developer, or Automation Specialist positions. He is open to remote roles globally as well as relocation opportunities. You can email him directly at muhammadareshk@gmail.com.",
+    availability: "Yes! Aresh is available for AI Engineer, Backend Engineer, or SaaS Developer roles. He is open to remote roles globally as well as on-site opportunities. You can reach him directly at muhammadareshk@gmail.com.",
     instagram: "Virtual Instagram Manager is an automated social media execution system. Aresh integrated LangChain and Hugging Face models to research trending topics, formulate descriptions, generate graphic creatives, and schedule postings via backend browser automations built in Playwright.",
     code: "Code Assistant is an LLM agent built with Python, Streamlit, and LangChain. It helps developers generate clean, commented code, refine queries, rewrite algorithms, and automate repetitive coding setups.",
     evaluator: "Startup Evaluator is a CrewAI multi-agent engine. It coordinates multiple specialized agents (competitor research, financials, risks) utilizing LiteLLM API wrappers and Streamlit UI to deliver deep product feedback and RAG-driven valuations.",
     hrms: "Real-Time AI Interview Module is an audio-streamed HR screening interface. It integrates speech-to-text (Whisper), low-latency candidate assessment (LLMs), and high-quality voice synthesis (Kokoro TTS) connected via LiveKit WebRTC channels.",
-    education: "Aresh is studying for a BS in Computer Science (Jul 2023 – Jun 2027) at Dawood University of Engineering and Technology in Karachi, maintaining a CGPA of 3.27.",
-    fallback: "Query analyzed. Muhammad Aresh Khan is highly capable in LangChain/CrewAI Agent systems, FastAPI, and n8n workflows. For details, try looking at his projects grid, checking his experience log, or sending a direct message via the contact form!"
+    education: "Aresh is studying for a BS in Computer Science (Jul 2023 – Jun 2027) at Dawood University of Engineering and Technology (DUET) in Karachi, maintaining a CGPA of 3.27.",
+    fallback: "Query analyzed. Muhammad Aresh Khan specializes in AI-Powered SaaS, Agentic AI (LangGraph, LangChain, CrewAI), FastAPI backend engineering, and n8n automation. Feel free to explore his projects grid, inspect his experience log, or reach out via the contact form!"
 };
 
 export default function AgentTerminal() {
@@ -98,7 +101,7 @@ export default function AgentTerminal() {
             await sleep(500);
             setMessages(prev => prev.map(m => m.id === statusId ? {
                 ...m,
-                content: 'Context matching resolved. Routing to Groq Llama-3.1-8B model...'
+                content: 'Context matching resolved. Routing to Groq high-speed LLM inference...'
             } : m));
 
             // Call Next.js Server-side secure route
@@ -201,6 +204,20 @@ export default function AgentTerminal() {
                                     onClick={() => runAgentPipeline("Has Aresh worked with n8n and automation?")}
                                 >
                                     n8n Experience
+                                </button>
+                                <button 
+                                    className="preset-btn" 
+                                    disabled={isLoading}
+                                    onClick={() => runAgentPipeline("Tell me about the Clinic WebApp CMS & SaaS project.")}
+                                >
+                                    Clinic WebApp CMS
+                                </button>
+                                <button 
+                                    className="preset-btn" 
+                                    disabled={isLoading}
+                                    onClick={() => runAgentPipeline("Tell me about the 51Skills Hackathon award.")}
+                                >
+                                    🏆 Hackathon Award
                                 </button>
                                 <button 
                                     className="preset-btn" 
